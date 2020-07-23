@@ -127,6 +127,14 @@ p{
   line-height: 1.285;
 }
 
+img {
+    width: 100%;
+}
+
+figure{
+    margin: 0;
+}
+
 address{
   font-style:normal;
 }
@@ -153,6 +161,14 @@ header{
     padding: 15px 0;
 }
 
+header figure{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
 header .content-wrapper{
     display: flex;
     justify-content: center;
@@ -177,6 +193,7 @@ header nav{
     font-size: 1.125em;
     font-weight: 700;
     text-transform: uppercase;
+
 }
 
 header nav ul{
@@ -196,7 +213,7 @@ footer .content-wrapper{
 }
 
 footer .contact{
-   margin: 0 0 50px 0;
+   margin-bottom: 50px;
 }
 
 footer p{
@@ -226,7 +243,11 @@ footer .copyright{
 .hero-area{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
+    background: url('../img/hero.jpg') center no-repeat #333;
+    background-size: cover;
+    min-height: 500px;
 }
 
 .hero-area h1{
@@ -234,6 +255,7 @@ footer .copyright{
     font-family: 'Poppins', Helvetica, Arial, sans-serif;
     font-weight: 500;
     line-height: 1.2;
+    width: 83%;
 }
 
 /* Aside */
@@ -255,7 +277,10 @@ aside .form {
 .features{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: row wrap;
+    background: url('../img/features.jpg') center no-repeat;
+    background-size: cover;
 }
 
 .features h2{
@@ -289,7 +314,7 @@ aside .form {
 }
 
 .reviews h2{
-    margin: 0 0 40px 0;
+    margin-bottom: 40px;
     line-height: 1;
 }
 
@@ -492,7 +517,7 @@ width: 100%;
   }
 
   header figure{
-      width: 30%;
+      width: 34%;
   }
 
   header nav {
@@ -507,12 +532,16 @@ width: 100%;
       display: none;
   }
 
+  /* Hero Area */
+
+  .hero-area{
+      min-height: 600px;
+  }
+
   .hero-area h1{
       font-size: 3em;
       margin: 0;
   }
-
-  /* Hero Area */
 
   /* Aside */
   aside .content-wrapper{
@@ -557,6 +586,7 @@ width: 100%;
       width: 85%;
   }
 
+  .reviews article figure,
   .reviews article div {
       width: 49%;
   }
@@ -666,8 +696,11 @@ width: 100%;
   }
 
   /* Hero */
+  .hero-area{
+      min-height: 600px;
+  }
   .hero-area h1{
-      width: 60%;
+      width: 80%;
       font-size: 3.75em;
   }
 
@@ -698,6 +731,10 @@ width: 100%;
 
   .reviews h2{
       padding-bottom: 50px;
+  }
+
+  .reviews article figure{
+      width: 50%;
   }
 
   .reviews article div{
