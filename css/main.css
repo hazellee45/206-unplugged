@@ -220,16 +220,25 @@ footer p{
     margin: 0;
 }
 
-footer .social-icon{
+footer .social-icons{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-footer .social-icon p{
+footer .social-icons p{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+    background-color: #527158;
+    width: 40px;
+    height: 40px;
+}
+
+footer .social-icons p i{
+    font-size: 1.3em;
+    color: #e2e3ed;
 }
 
 footer .copyright{
@@ -592,6 +601,9 @@ width: 100%;
       flex-basis: 50%;
   }
 
+.features i{
+  margin-bottom: 30px;
+}
   .features .features-item-description {
       width: 62%;
   }
@@ -642,6 +654,11 @@ width: 100%;
 
   footer p{
       line-height: 1.285;
+  }
+
+  footer .social-icons{
+      width: 12.5em;
+      justify-content: space-between;
   }
 
   footer .copyright{
