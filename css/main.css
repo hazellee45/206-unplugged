@@ -113,13 +113,19 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  line-height: 1;
+  margin: 0;
 }
 
 h3, h4{
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   font-weight: 500;
-  margin: 20px 0;
+  margin: 0 0 20px 0;
+}
+
+h4{
+  color: #ffffff;
 }
 
 p{
@@ -158,11 +164,11 @@ footer{
 }
 
 header{
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 header figure{
-    width: 60%;
+    width: 68.75%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,11 +183,11 @@ header .content-wrapper{
     margin: 0;
 }
 
-header-divider{
+header .header-divider{
     width: 100%;
     height: 1px;
-    margin: 10px 0 20px 0;
-    color: #3a3a3a;
+    margin: 10px 0;
+    color: #ffffff;
 }
 
 header nav{
@@ -193,13 +199,15 @@ header nav{
     font-size: 1.125em;
     font-weight: 700;
     text-transform: uppercase;
-
+    padding-left: 0;
 }
 
 header nav ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 footer{
@@ -262,7 +270,7 @@ footer .copyright{
 .hero-area h1{
     font-size: 2.25em;
     font-family: 'Poppins', Helvetica, Arial, sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.2;
     width: 83%;
 }
@@ -281,6 +289,14 @@ aside .form {
     margin-top: 30px;
 }
 
+aside .content-wrapper{
+    margin: 25px 0 50px 0;
+}
+
+aside .content-wrapper h3{
+    margin: 0;
+}
+
 /* Features */
 
 .features{
@@ -293,7 +309,7 @@ aside .form {
 }
 
 .features h2{
-    margin: 0 0 60px 0;
+    margin-bottom: 35px;
 }
 
 .features p{
@@ -309,6 +325,9 @@ aside .form {
 .features i{
     font-size: 3.75em;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .features .features-items{
@@ -328,7 +347,7 @@ aside .form {
 }
 
 .reviews h2{
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     line-height: 1;
 }
 
@@ -340,13 +359,13 @@ aside .form {
 input[type=text]{
     box-sizing: border-box;
     width: 100%;
-    color: #2a423a;
+    color: #e2e3ed;
     font-style: italic;
     padding: 1em;
 }
 
 input[type=button] {
-width: 100%;
+    width: 100%;
     padding: 20px 0;
     margin-top: 20px;
     background-color: #2a423a;
@@ -395,6 +414,10 @@ width: 100%;
 
 .contact-content{
     margin: 0;
+}
+
+.contact-section .content-wrapper h2{
+    margin-bottom: 10px;
 }
 
 /***** Mobile Styles - FAQ Page *****/
@@ -534,6 +557,10 @@ width: 100%;
       line-height: 1.25;
   }
 
+  p{
+      font-size: 0.875em;
+  }
+
   /* Header */
 
   header{
@@ -547,11 +574,17 @@ width: 100%;
   }
 
   header figure{
+      justify-content: flex-start;
+  }
+
+  header figure img{
       width: 34%;
   }
 
   header nav {
       width: 20%;
+      justify-content: space-between;
+      font-size: 1em;
   }
 
   header nav ul{
@@ -587,6 +620,15 @@ width: 100%;
       margin: 0;
   }
 
+  input[type=text]{
+      height:2em;
+  }
+
+  input[type=button]{
+      padding: 15px 40px;
+      margin-top: 20px;
+  }
+
   /* Features */
 
   .features h2{
@@ -601,9 +643,10 @@ width: 100%;
       flex-basis: 50%;
   }
 
-.features i{
-  margin-bottom: 30px;
-}
+  .features i{
+    margin-bottom: 30px;
+  }
+
   .features .features-item-description {
       width: 62%;
   }
@@ -619,7 +662,11 @@ width: 100%;
       width: 85%;
   }
 
-  .reviews article figure,
+  .reviews article figure {
+      width: 49%;
+      min-height: 200px;
+  }
+
   .reviews article div {
       width: 49%;
   }
@@ -668,15 +715,16 @@ width: 100%;
 
 /*===========About page===============*/
 
-  .misson-content{
+  .mission-content{
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding-top: 20px;
   }
 
-  .mission-content p {
+  .mission-content p{
       width: 45%;
+      margin-top: 14px;
   }
 
   .map figure {
@@ -728,7 +776,7 @@ width: 100%;
       padding: 15px 0;
   }
 
-  header figure{
+  header figure img{
       width: 34%;
   }
 
@@ -737,14 +785,19 @@ width: 100%;
   }
 
   h3, h4{
-      font-size: 1.125em;
+      font-size: 1.875em;
       line-height: 1.333;
+  }
+
+  p{
+      font-size: 1.125em;
   }
 
   /* Hero */
   .hero-area{
       min-height: 600px;
   }
+
   .hero-area h1{
       width: 80%;
       font-size: 3.75em;
@@ -760,8 +813,18 @@ width: 100%;
       width: 33%;
   }
 
-  .form-description p{
+  aside .form h3{
+      margin: 18px 0;
+  }
+
+  input[type=text]{
       font-size: 1.125em;
+  }
+
+  input[type=button]{
+      font-size: 1.5em;
+      padding: 15px 30px;
+      margin-top: 18px;
   }
 
   /* Features */
