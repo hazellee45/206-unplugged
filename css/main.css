@@ -184,10 +184,11 @@ header .content-wrapper{
 }
 
 header .header-divider{
+    border-top: solid;
     width: 100%;
     height: 1px;
-    margin: 10px 0;
-    color: #ffffff;
+    margin: 13px 0;
+    color: #3a3a3a;
 }
 
 header nav{
